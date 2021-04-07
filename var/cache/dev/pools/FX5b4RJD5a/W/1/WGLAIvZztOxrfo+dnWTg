@@ -1,0 +1,87 @@
+<?php //%255BApp%255CEntity%255CStatistiquesCompetences%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'App\\Repository\\StatistiquesCompetencesRepository',
+            ],
+            'collectionOperations' => [
+                1 => [
+                    'GET' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas accès à cette ressource',
+                        'path' => 'formateurs/promo/{id}/referentiel/{num}/competences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'user_read',
+                            ],
+                        ],
+                    ],
+                    'POST' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'êtes pas autorisé à faire cette action',
+                        'path' => 'formateurs/promo/{id}/referentiel/{num}/competences',
+                    ],
+                    'apprenant_brief' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'Vous n\'avez pas accès à cette ressource',
+                        'path' => 'apprenant/{idAp}/promo/{idPr}/referentiel/{idRef}/statistiques/briefs',
+                        'normalization_context' => [
+                            'groups' => [
+                                'user_read',
+                            ],
+                        ],
+                    ],
+                    'apprenant_compet' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'Vous n\'avez pas accès à cette ressource',
+                        'path' => 'api/apprenant/{idAp}/promo/{idPr}/referentiel/{idRef}/competences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'user_read',
+                            ],
+                        ],
+                    ],
+                    'compet_stats' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas accès à cette ressource',
+                        'path' => 'formateurs/promo/{idPr}/referentiel/{idRef}/statistiques/competences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'sc_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'GET' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas accès à cette ressource',
+                        'path' => 'formateurs/promo_referentiel/competences/{id}',
+                    ],
+                    'PUT' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'êtes pas autorisé à faire cette action',
+                        'path' => 'formateurs/promo/{var}/referentiel/{num}/competences/{id}',
+                    ],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

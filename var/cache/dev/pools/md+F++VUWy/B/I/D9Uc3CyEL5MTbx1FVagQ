@@ -1,0 +1,78 @@
+<?php //App_Entity_Ressource
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Ressource',
+                'id',
+                'titre',
+                'url',
+                'pj',
+                'brief',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'titre' => $o[2],
+                    'url' => $o[3],
+                    'pj' => $o[4],
+                    'brief' => $o[5],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+                [
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+                [
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+                [
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

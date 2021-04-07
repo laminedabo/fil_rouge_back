@@ -1,0 +1,53 @@
+<?php //App_Entity_Profilsortie
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Profilsortie',
+                'id',
+                'libelle',
+                'apprenants',
+                'statut',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'libelle' => $o[2],
+                    'apprenants' => $o[3],
+                    'statut' => $o[4],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'profilsortie_read',
+                    'profilsortie_apprenants_read',
+                    'profilsortie_libelle_read',
+                    'profilSortie_write',
+                ],
+                [
+                    'profilsortie_read',
+                    'profilsortie_apprenants_read',
+                    'profilsortie_libelle_read',
+                    'profilSortie_write',
+                ],
+                [
+                    'profilsortie_apprenants_read',
+                ],
+                [
+                    'profilSortie_write',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

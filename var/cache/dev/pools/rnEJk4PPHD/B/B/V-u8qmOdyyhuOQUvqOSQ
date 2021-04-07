@@ -1,0 +1,3 @@
+<?php //route_name_b8f365c00eda6754554ef47680f25230
+
+return [PHP_INT_MAX, 'api_groupecompetences_get_item'];

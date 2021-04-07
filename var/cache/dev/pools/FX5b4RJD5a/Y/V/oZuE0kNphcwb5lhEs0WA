@@ -1,0 +1,55 @@
+<?php //%255BApp%255CEntity%255CUser%2524prenom%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'groups' => [
+                [
+                    'Default',
+                ],
+            ],
+            'length' => [
+                1 => 255,
+            ],
+            'nullable' => [
+                1 => true,
+            ],
+        ],
+        'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+            'groups' => [
+                2 => [
+                    'user_read',
+                    'apprenant_read',
+                    'profil_read',
+                    'promo_read',
+                    'gprincipal_read',
+                    'gproupe_read',
+                    'gproupe_apprenant_read',
+                    'promo_groupe_apprenants',
+                    'promo_groupe_formateurs',
+                    'brief_promo',
+                    'apprenant_promo_brief',
+                    'apprenant_promo_brief',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'profilsortie_apprenants_read',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

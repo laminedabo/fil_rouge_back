@@ -1,0 +1,65 @@
+<?php //%255BApp%255CEntity%255CPromo%2524groupes%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+        clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiSubresource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiSubresource')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Count'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Count')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'mappedBy' => [
+                'promo',
+            ],
+            'targetEntity' => [
+                'App\\Entity\\Groupe',
+            ],
+            'cascade' => [
+                [
+                    'persist',
+                ],
+            ],
+            'orphanRemoval' => [
+                true,
+            ],
+            'maxDepth' => [
+                2 => 2,
+            ],
+            'minMessage' => [
+                3 => 'You must specify at least one group',
+            ],
+            'maxMessage' => [
+                3 => 'You cannot specify more than {{ max }} groups',
+            ],
+            'min' => [
+                3 => 1,
+            ],
+            'max' => [
+                3 => 3,
+            ],
+            'groups' => [
+                3 => [
+                    'Default',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+            'groups' => [
+                1 => [
+                    'promo_read',
+                    'promo_groupe_apprenants',
+                    'promo_groupe_formateurs',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];

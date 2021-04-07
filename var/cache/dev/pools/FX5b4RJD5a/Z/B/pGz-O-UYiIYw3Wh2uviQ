@@ -1,0 +1,37 @@
+<?php //%255BApp%255CEntity%255CCommentaireGeneral%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'add_commentaire' => [
+                        'method' => 'POST',
+                        'path' => 'users/promo/{idp}/apprenant/{ida}/chats',
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'non autorisé.',
+                    ],
+                    'get_commentaire' => [
+                        'method' => 'GET',
+                        'path' => 'users/promo/{idp}/apprenant/{ida}/chats',
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'non autorisé.',
+                    ],
+                ],
+            ],
+            'repositoryClass' => [
+                1 => 'App\\Repository\\CommentaireGeneralRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

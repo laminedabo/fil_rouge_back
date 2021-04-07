@@ -1,0 +1,107 @@
+<?php //%255BApp%255CEntity%255CReferentiel%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'fields' => [
+                'libelle',
+            ],
+            'groups' => [
+                [
+                    'Default',
+                ],
+            ],
+            'collectionOperations' => [
+                1 => [
+                    'add_referentiel' => [
+                        'method' => 'POST',
+                        'path' => '',
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas le privilege',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '',
+                        'normalization_context' => [
+                            'groups' => [
+                                'referentiel_read',
+                            ],
+                        ],
+                    ],
+                    'show_referentiel_groupecompetence' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/groupecompetences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'referentiel_groupecompetence_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'get' => [
+                        'security' => 'is_granted(\'VIEW\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/{id}',
+                        'normalization_context' => [
+                            'groups' => [
+                                'referentiel_read',
+                            ],
+                        ],
+                    ],
+                    'show_referentiel_groupecompetence' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/{id}/competences',
+                        'normalization_context' => [
+                            'groups' => [
+                                'referentiel_competence_read',
+                            ],
+                        ],
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'DELETE\',object)',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => '/{id}',
+                    ],
+                    'update_referentiel' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => '/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    'normalization_context' => [
+                        'enable_max_depth' => true,
+                    ],
+                    'route_prefix' => '/admin/referentiels',
+                ],
+            ],
+            'repositoryClass' => [
+                2 => 'App\\Repository\\ReferentielRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

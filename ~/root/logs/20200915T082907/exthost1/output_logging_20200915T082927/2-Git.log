@@ -1,0 +1,238 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /home/ldab/Bureau/fil_rouge_ldab
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :src/Controller/PromoController.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/src/Controller/PromoController.php
+> git cat-file -s d7d81b66ae44df4e19b393d20b29c3ee46482c1b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git show --textconv :src/Controller/ProfilsortieController.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/src/Controller/ProfilsortieController.php
+> git cat-file -s 99870723e58ca0d1d25a59d484e0b02270fa936c
+> git show --textconv :src/Controller/BriefController.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/src/Controller/BriefController.php
+> git cat-file -s c381ae1012d15f197a7505a25d67f00256537ef5
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/ldab/Bureau/fil_rouge_ldab/src/Controller/BriefController.php
+> git show --textconv :.env
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/.env
+> git cat-file -s 06198cdaeb4cedc596a7f84662ec5383ba4186d2
+> git show --textconv :.env.local
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/.env.local
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/.env
+> git cat-file -s 06198cdaeb4cedc596a7f84662ec5383ba4186d2
+> git show --textconv :.env.local
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/.env.local
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.env
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/.env
+> git cat-file -s 06198cdaeb4cedc596a7f84662ec5383ba4186d2
+> git check-ignore -v -z --stdin
+> git show --textconv :src/DataFixtures/AppFixtures.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/src/DataFixtures/AppFixtures.php
+> git cat-file -s f34aaa7070db2bf4e819c54ae3d9ab1c9fcc1b26
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :migrations/Version20200830154021.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/migrations/Version20200830154021.php
+> git cat-file -s 4531ef32a2aca3ba02b7219f3a74c599f60f560e
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :config/routes/annotations.yaml
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/config/routes/annotations.yaml
+> git cat-file -s e92efc5969392ae3d73489d066d8cd625dd27718
+> git show --textconv :config/routes/api_platform.yaml
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/config/routes/api_platform.yaml
+> git cat-file -s 38f11cba851fd17ed81398d13694267eacb21a59
+> git show --textconv :config/bundles.php
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/config/bundles.php
+> git cat-file -s 3b89df1ed53200e7dcfd30f3f37e1b7d95159cdd
+> git show --textconv :config/routes.yaml
+> git ls-files --stage -- /home/ldab/Bureau/fil_rouge_ldab/config/routes.yaml
+> git cat-file -s f7579201c275113c8cf68b7a04739dcf358b895c
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse ldab
+> git rev-parse --symbolic-full-name ldab@{u}
+> git rev-list --left-right ldab...refs/remotes/origin/ldab
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/ldab/Bureau/fil_rouge_ldab/.git/refs/remotes/origin/ldab', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin

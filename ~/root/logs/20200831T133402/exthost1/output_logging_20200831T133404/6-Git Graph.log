@@ -1,0 +1,8 @@
+[2020-08-31 13:34:04.860] Starting Git Graph ...
+[2020-08-31 13:34:04.905] Using git (version: 2.17.1)
+[2020-08-31 13:34:04.908] Started Git Graph - Ready to use!
+[2020-08-31 13:34:04.909] Searching workspace for new repos ...
+[2020-08-31 13:34:04.917] > git rev-parse --show-toplevel
+[2020-08-31 13:34:04.947] Added new repo: /opt/lampp/htdocs/file_rouge_gp1
+[2020-08-31 13:34:04.948] Completed searching workspace for new repos
+[2020-08-31 13:34:04.948] Showing "Git Graph" Status Bar Item

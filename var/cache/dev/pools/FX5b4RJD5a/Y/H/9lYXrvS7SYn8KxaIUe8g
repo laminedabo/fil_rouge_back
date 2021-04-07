@@ -1,0 +1,96 @@
+<?php //%255BApp%255CEntity%255CApprenant%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'App\\Repository\\ApprenantRepository',
+            ],
+            'collectionOperations' => [
+                1 => [
+                    'add_apprenant' => [
+                        'method' => 'POST',
+                        'path' => '/admin/apprenants',
+                        'security' => 'is_granted(\'ROLE_ADMIN\') or is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/admin/apprenants',
+                    ],
+                    'get_apprenants' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants',
+                        'security' => '(is_granted(\'ROLE_ADMIN\'))',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'route_name' => 'formateur_liste',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                1 => [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/apprenants/{id}',
+                        'normalization_context' => [
+                            'groups' => [
+                                'apprenant_read',
+                            ],
+                        ],
+                        'defaults' => [
+                            'id' => null,
+                        ],
+                    ],
+                    'get_apprenant' => [
+                        'method' => 'GET',
+                        'path' => '/apprenants/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                        'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                        'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/apprenants/{id}',
+                    ],
+                    'patch' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/apprenants/{id}',
+                    ],
+                    'put' => [
+                        'security_post_denormalize' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => 'admin/apprenants/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    'pagination_items_per_page' => 10,
+                    'normalization_context' => [
+                        'groups' => [
+                            'gprincipal_read',
+                        ],
+                        'enable_max_depth' => true,
+                    ],
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

@@ -1,0 +1,112 @@
+<?php //App_Entity_Referentiel
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Referentiel',
+                'id',
+                'libelle',
+                'presentation',
+                'programme',
+                'critereAdmission',
+                'critereEvaluation',
+                'promos',
+                'groupecompetence',
+                'briefs',
+                'statistiquesCompetences',
+                'statut',
+                'competences',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'libelle' => $o[2],
+                    'presentation' => $o[3],
+                    'programme' => $o[4],
+                    'critereAdmission' => $o[5],
+                    'critereEvaluation' => $o[6],
+                    'promos' => $o[7],
+                    'groupecompetence' => $o[8],
+                    'briefs' => $o[9],
+                    'statistiquesCompetences' => $o[10],
+                    'statut' => $o[11],
+                    'competences' => $o[12],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'referentiel_read',
+                    'promo_read',
+                    'promo_referentiel',
+                    'Grpcompetence_read',
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                ],
+                [
+                    'referentiel_read',
+                    'promo_read',
+                    'promo_referentiel',
+                    'promo_groupe_apprenants',
+                    'promo_groupe_formateurs',
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                ],
+                [
+                    'referentiel_read',
+                    'promo_read',
+                    'promo_referentiel',
+                    'promo_groupe_apprenants',
+                    'promo_groupe_formateurs',
+                ],
+                [
+                    'referentiel_read',
+                    'promo_referentiel',
+                ],
+                [
+                    'referentiel_read',
+                    'promo_referentiel',
+                ],
+                [
+                    'referentiel_read',
+                    'promo_referentiel',
+                ],
+                [
+                    'referentiel_read',
+                ],
+                12 => [
+                    'referentiel_read',
+                    'referentiel_competence_read',
+                    'promo_referentiel',
+                ],
+            ],
+            'maxDepth' => [
+                12 => 2,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

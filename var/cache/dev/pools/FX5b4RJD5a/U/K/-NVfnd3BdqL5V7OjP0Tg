@@ -1,0 +1,110 @@
+<?php //%255BApp%255CEntity%255CPromo%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'add_promo' => [
+                        'method' => 'POST',
+                        'path' => '/promos',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                    ],
+                    'show_promo' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/promos',
+                        'normalization_context' => [
+                            'groups' => [
+                                'promo_list',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'promo_gprincipal' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/promos/principal',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_CM\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/promos/{id}',
+                        'normalization_context' => [
+                            'groups' => [
+                                'promo_read',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'DELETE\',object)',
+                        'security_message' => 'Seul le proprietaite....',
+                        'path' => '/promos/{id}',
+                    ],
+                    'update_promo' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/promos/{id}',
+                    ],
+                    'gerer_apprenants' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/promos/{id}/apprenants',
+                    ],
+                    'gerer_formateurs' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/promos/{id}/formateurs',
+                    ],
+                    'gerer_groupes' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/promos/{id}/groupes',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'route_prefix' => '/admin',
+                ],
+            ],
+            'filterClass' => [
+                1 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\SearchFilter',
+            ],
+            'properties' => [
+                1 => [
+                    'id' => 'exact',
+                    'groupes.type' => 'exact',
+                    'groupes.apprenants.lastLogin' => 'exact',
+                ],
+            ],
+            'repositoryClass' => [
+                2 => 'App\\Repository\\PromoRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

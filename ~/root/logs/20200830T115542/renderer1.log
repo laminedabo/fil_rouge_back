@@ -1,0 +1,91 @@
+[2020-08-30 11:55:45.239] [renderer1] [error] Error: [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[2020-08-30 11:55:45.247] [renderer1] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[2020-08-30 14:16:03.304] [renderer1] [error] XHR failed: Error: XHR failed
+    at XMLHttpRequest.r.onerror (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:446:141)
+[2020-08-30 14:22:54.571] [renderer1] [error] XHR failed: Error: XHR failed
+    at XMLHttpRequest.r.onerror (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:446:141)
+[2020-08-30 14:27:08.841] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:27:22.153] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:29:06.510] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:29:15.534] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:29:40.028] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:41:59.151] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:42:02.452] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:42:04.318] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 14:42:59.543] [renderer1] [error] Cannot read property 'getCell' of undefined: TypeError: Cannot read property 'getCell' of undefined
+    at Object.t.convertLinkRangeToBuffer (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3451:362)
+    at g._provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4446:537)
+    at g.provideLinks (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3450:508)
+    at /snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243514
+    at Array.forEach (<anonymous>)
+    at t._askForLink (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243376)
+    at t._onHover (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:243071)
+    at t._onMouseMove (/snap/code/42/usr/share/code/resources/app/node_modules.asar/xterm/lib/xterm.js:1:242931)
+[2020-08-30 16:34:19.466] [renderer1] [error] Unable to write into user settings. Please open the user settings to correct errors/warnings in it and try again.: Error: Unable to write into user settings. Please open the user settings to correct errors/warnings in it and try again.
+    at D.reject (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5545:245)
+    at file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5549:267
+    at async D.doWriteConfiguration (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5542:403)

@@ -1,0 +1,9 @@
+[2020-08-30 11:03:33:198] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false -c color.diff=false diff --name-status -M --no-ext-diff origin/update_fil_rouge_fadel..): warning: inexact rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 2366 and retry the command.
+
+[2020-08-30 11:04:30:762] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false -c color.diff=false diff --name-status -M --no-ext-diff origin/master..): warning: inexact rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 1707 and retry the command.
+
+[2020-08-30 11:04:56:997] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false -c color.diff=false diff --name-status -M --no-ext-diff origin/master..): warning: inexact rename detection was skipped due to too many files.
+warning: you may want to set your diff.renameLimit variable to at least 1707 and retry the command.
+

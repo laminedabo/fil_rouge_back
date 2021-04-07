@@ -1,0 +1,3 @@
+<?php //route_name_128859a0c3a0ca6dcb43ac3c830d8a78
+
+return [PHP_INT_MAX, 'api_groupes_get_item'];

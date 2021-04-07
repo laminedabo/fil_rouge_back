@@ -1,0 +1,30 @@
+<?php //subresource_operations_a400a70b6519b2bfe3c9c620511603f9
+
+return [PHP_INT_MAX, [
+    'api_profilsorties_apprenants_get_subresource' => [
+        'property' => 'apprenants',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Apprenant',
+        'shortNames' => [
+            'Apprenant',
+            'Profilsortie',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Profilsortie',
+                true,
+            ],
+        ],
+        'operation_name' => 'apprenants_get_subresource',
+        'route_name' => 'api_profilsorties_apprenants_get_subresource',
+        'path' => '/profilsorties/{id}/apprenants.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+]];

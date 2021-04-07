@@ -1,0 +1,31 @@
+<?php //%255BApp%255CController%255CPromoController%2523promo_id_gp_principal%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/admin/promos/{id}/principal',
+            ],
+            'defaults' => [
+                [
+                    '__controller' => 'App\\Controller\\PromoController::promo_id_gp_principal',
+                    '__api_resource_class' => 'App\\Entity\\Promo',
+                    '__api_collection_operation_name' => 'promo_id_gprincipal',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

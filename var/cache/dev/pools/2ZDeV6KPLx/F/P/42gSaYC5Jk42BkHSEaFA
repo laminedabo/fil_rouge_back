@@ -1,0 +1,59 @@
+<?php //App_Entity_LivrablePartiel
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\LivrablePartiel',
+                'id',
+                'libelle',
+                'description',
+                'delai',
+                'dateCreation',
+                'type',
+                'livrableRendus',
+                'promoBrief',
+                'niveaux',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'libelle' => $o[2],
+                    'description' => $o[3],
+                    'delai' => $o[4],
+                    'dateCreation' => $o[5],
+                    'type' => $o[6],
+                    'livrableRendus' => $o[7],
+                    'promoBrief' => $o[8],
+                    'niveaux' => $o[9],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'brief_promo',
+                ],
+                [
+                    'brief_promo',
+                ],
+                9 => [
+                    'brief_promo',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,180 @@
+<?php //%255BApp%255CEntity%255CBrief%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'formateur/briefs',
+                        'normalization_context' => [
+                            'groups' => [
+                                'all_brief_read',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'brief_groupe_promo' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'formateur/promos/{idp}/groupes/{idg}/briefs',
+                        'requirements' => [
+                            'idg' => '\\d+',
+                        ],
+                        'normalization_context' => [
+                            'groups' => [
+                                'brief_groupe_promo',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'brief_promo' => [
+                        'method' => 'GET',
+                        'path' => 'formateurs/promos/{idp}/briefs/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                        'normalization_context' => [
+                            'groups' => [
+                                'brief_promo',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'apprenant_promo_brief' => [
+                        'method' => 'GET',
+                        'path' => 'apprenants/promos/{idp}/briefs/{idb}',
+                        'requirements' => [
+                            'idb' => '\\d+',
+                        ],
+                        'normalization_context' => [
+                            'groups' => [
+                                'apprenant_promo_brief',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'promo_apprenant_brief' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'apprenants/promos/{id}/briefs',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                        'normalization_context' => [
+                            'groups' => [
+                                'brief_apprenant_promo',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'promo_id_brief' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_CM\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'formateurs/promos/{idp}/briefs',
+                        'requirements' => [
+                            'idp' => '\\d+',
+                        ],
+                        'normalization_context' => [
+                            'groups' => [
+                                'promo_id_brief',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'briefs_brouillon' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'formateur/briefs/brouillons',
+                        'normalization_context' => [
+                            'groups' => [
+                                'brief_brouillon',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'briefs_valide' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => 'formateur/briefs/valides',
+                        'normalization_context' => [
+                            'groups' => [
+                                'brief_valide',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'add_briefs' => [
+                        'method' => 'POST',
+                        'path' => 'formateur/briefs',
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                    ],
+                    'duplique_briefs' => [
+                        'method' => 'POST',
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'formateur/briefs/{id}',
+                        'defaults' => [
+                            'id' => null,
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'formateur/briefs/{id}',
+                    ],
+                    'assignation_briefs' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'formateurs/promo/{idpromo}/brief/{idbrief}/assignation',
+                    ],
+                    'update_briefs' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => 'formateur/promo/{idpromo}/brief/{idbrief}',
+                        'defaults' => [
+                            'id' => null,
+                        ],
+                    ],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'normalization_context' => [
+                        'groups' => [
+                            'brief_read',
+                        ],
+                        'enable_max_depth' => true,
+                    ],
+                ],
+            ],
+            'repositoryClass' => [
+                1 => 'App\\Repository\\BriefRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

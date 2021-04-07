@@ -1,0 +1,55 @@
+[2020-08-29 21:36:19.346] [exthost] [info] extension host started
+[2020-08-29 21:36:19.462] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2020-08-29 21:36:19.462] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2020-08-29 21:36:19.481] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"extensionId":{"value":"vscode.php-language-features","_lower":"vscode.php-language-features"},"activationEvent":"onLanguage:php"}
+[2020-08-29 21:36:19.481] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/php-language-features/dist/phpMain
+[2020-08-29 21:36:19.495] [exthost] [info] ExtensionService#_doActivateExtension MehediDracula.php-namespace-resolver {"startup":false,"extensionId":{"value":"MehediDracula.php-namespace-resolver","_lower":"mehedidracula.php-namespace-resolver"},"activationEvent":"onLanguage:php"}
+[2020-08-29 21:36:19.495] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/mehedidracula.php-namespace-resolver-1.1.8/src/extension
+[2020-08-29 21:36:19.500] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-08-29 21:36:19.500] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-08-29 21:36:19.503] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-08-29 21:36:19.503] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2020-08-29 21:36:19.524] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-29 21:36:19.524] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/git/dist/main
+[2020-08-29 21:36:19.566] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-08-29 21:36:19.566] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2020-08-29 21:36:19.571] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-08-29 21:36:19.571] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-08-29 21:36:19.573] [exthost] [info] ExtensionService#_doActivateExtension alefragnani.project-manager {"startup":true,"extensionId":{"value":"alefragnani.project-manager","_lower":"alefragnani.project-manager"},"activationEvent":"*"}
+[2020-08-29 21:36:19.573] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/alefragnani.project-manager-11.2.0/dist/extension
+[2020-08-29 21:36:19.580] [exthost] [info] ExtensionService#_doActivateExtension Atishay-Jain.All-Autocomplete {"startup":true,"extensionId":{"value":"Atishay-Jain.All-Autocomplete","_lower":"atishay-jain.all-autocomplete"},"activationEvent":"*"}
+[2020-08-29 21:36:19.580] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/atishay-jain.all-autocomplete-0.0.23/dist/extension
+[2020-08-29 21:36:19.582] [exthost] [info] ExtensionService#_doActivateExtension donjayamanne.githistory {"startup":true,"extensionId":{"value":"donjayamanne.githistory","_lower":"donjayamanne.githistory"},"activationEvent":"*"}
+[2020-08-29 21:36:19.582] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/donjayamanne.githistory-0.6.9/dist/src/extension
+[2020-08-29 21:36:19.595] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-08-29 21:36:19.595] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/eamodio.gitlens-10.2.2/dist/extension
+[2020-08-29 21:36:19.612] [exthost] [info] ExtensionService#_doActivateExtension huizhou.githd {"startup":true,"extensionId":{"value":"huizhou.githd","_lower":"huizhou.githd"},"activationEvent":"*"}
+[2020-08-29 21:36:19.613] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/huizhou.githd-2.2.4/out/src/extension
+[2020-08-29 21:36:19.898] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-08-29 21:36:19.898] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/42/usr/share/code/resources/app/extensions/github/dist/extension.js
+[2020-08-29 21:36:19.965] [exthost] [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github {"startup":false,"extensionId":{"value":"GitHub.vscode-pull-request-github","_lower":"github.vscode-pull-request-github"},"activationEvent":"onStartupFinished"}
+[2020-08-29 21:36:19.965] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/github.vscode-pull-request-github-0.19.0/media/extension
+[2020-08-29 21:36:19.985] [exthost] [info] eager extensions activated
+[2020-08-29 21:36:20.035] [exthost] [error] Activating extension GitHub.vscode-pull-request-github failed due to an error:
+[2020-08-29 21:36:20.035] [exthost] [error] Error: No authentication provider 'github' is currently registered.
+    at v.getSessions (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3952:107)
+    at w.$getSessions (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5006:400)
+    at w.$getSession (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5006:696)
+    at p._doInvokeHandler (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4346:599)
+    at p._invokeHandler (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4346:291)
+    at p._receiveRequest (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4344:953)
+    at p._receiveOneMessage (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4343:754)
+    at file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:4341:914
+    at c.fire (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at fire (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:434:97)
+    at t.PersistentProtocol._receiveMessage (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:438:545)
+    at file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:435:635
+    at c.fire (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:95:801)
+    at g.acceptChunk (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:431:445)
+    at file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:430:796
+    at Socket.t (file:///snap/code/42/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:440:185)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:276:11)
+    at Socket.Readable.push (_stream_readable.js:210:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)

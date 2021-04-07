@@ -1,0 +1,43 @@
+<?php //%255BApp%255CEntity%255CBrief%2524tags%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        clone ($p['Symfony\\Component\\Serializer\\Annotation\\Groups'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Annotation\\Groups')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'targetEntity' => [
+                'App\\Entity\\Tag',
+            ],
+            'inversedBy' => [
+                'briefs',
+            ],
+            'cascade' => [
+                [
+                    'persist',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Serializer\\Annotation\\Groups' => [
+            'groups' => [
+                1 => [
+                    'brief_read',
+                    'apprenant_promo_brief',
+                    'brief_groupe_promo',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

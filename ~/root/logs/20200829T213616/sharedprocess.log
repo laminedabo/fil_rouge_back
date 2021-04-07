@@ -1,0 +1,5 @@
+[2020-08-29 21:36:20.256] [sharedprocess] [info] main {"machineId":"70e47962f8db9099b5c32bff5d086a841625d7fc5fd73ad6847e53798bf19d88","windowId":2}
+[2020-08-29 21:37:00.265] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-29 21:37:00.268] [sharedprocess] [info] Skipping directory 0efca33a20bf5218eaa314fca17076eb.fr. Language pack still in use.
+[2020-08-30 11:55:04.233] [sharedprocess] [info] Uninstalling extension: ms-ceintl.vscode-language-pack-fr
+[2020-08-30 11:55:04.264] [sharedprocess] [info] Successfully uninstalled extension: ms-ceintl.vscode-language-pack-fr

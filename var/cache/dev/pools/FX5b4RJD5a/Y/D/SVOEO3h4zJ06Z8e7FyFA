@@ -1,0 +1,98 @@
+<?php //%255BApp%255CEntity%255CGroupe%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'get' => [
+                        'method' => 'GET',
+                        'path' => '',
+                        'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'normalization_context' => [
+                            'groups' => [
+                                'gproupe_read',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'show_apprenants' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/apprenants',
+                        'normalization_context' => [
+                            'groups' => [
+                                'gproupe_apprenant_read',
+                            ],
+                            'enable_max_depth' => true,
+                        ],
+                    ],
+                    'add_groupe' => [
+                        'method' => 'POST',
+                        'path' => '',
+                        'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                        'security_message' => 'Vous n\'avez pas le droit.',
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/{id}',
+                    ],
+                    'update_groupe' => [
+                        'method' => 'PUT',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/{id}',
+                    ],
+                    'delete_apprenant' => [
+                        'method' => 'DELETE',
+                        'security_post_denormalize' => 'is_granted(\'ROLE_FORMATEUR\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/{id}/apprenants/{ida}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'normalization_context' => [
+                        'groups' => [
+                            'gprincipal_read',
+                        ],
+                        'enable_max_depth' => true,
+                    ],
+                    'route_prefix' => '/admin/groupes',
+                ],
+            ],
+            'filterClass' => [
+                1 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\SearchFilter',
+            ],
+            'properties' => [
+                1 => [
+                    'id' => 'exact',
+                    'nom' => 'exact',
+                ],
+            ],
+            'repositoryClass' => [
+                2 => 'App\\Repository\\GroupeRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

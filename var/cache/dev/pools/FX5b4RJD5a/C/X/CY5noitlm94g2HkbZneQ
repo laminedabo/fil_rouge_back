@@ -1,0 +1,37 @@
+<?php //%255BApp%255CController%255CBriefController%2523UpdateBrief%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/brief',
+                'api/formateur/promo/{idpromo}/brief/{idbrief}',
+            ],
+            'name' => [
+                'brief',
+            ],
+            'defaults' => [
+                1 => [
+                    '__controller' => 'App\\Controller\\BriefController::UpdateBrief',
+                    '__api_resource_class' => 'App\\Entity\\Brief',
+                    '__api_collection_operation_name' => 'update_briefs',
+                ],
+            ],
+            'methods' => [
+                1 => [
+                    'PUT',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];

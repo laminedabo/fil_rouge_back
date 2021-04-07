@@ -1,0 +1,31 @@
+<?php //%255BApp%255CController%255CProfilsortieController%2523profilsortie_item%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/admin/promos/{idp}/profilsorties/{id}',
+            ],
+            'defaults' => [
+                [
+                    '__controller' => 'App\\Controller\\ProfilsortieController::profilsortie_item',
+                    '__api_resource_class' => 'Profilsortie',
+                    '__api_collection_operation_name' => 'profilsortie_item',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

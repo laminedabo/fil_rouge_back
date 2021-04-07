@@ -1,0 +1,61 @@
+<?php //subresource_operations_ef108116eeefd6ff32f4a77fdae3d499
+
+return [PHP_INT_MAX, [
+    'api_referentiels_competences_get_subresource' => [
+        'property' => 'competences',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Competence',
+        'shortNames' => [
+            'Competence',
+            'Referentiel',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Referentiel',
+                true,
+            ],
+        ],
+        'operation_name' => 'competences_get_subresource',
+        'route_name' => 'api_referentiels_competences_get_subresource',
+        'path' => '/admin/referentiels/referentiels/{id}/competences.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+    'api_referentiels_competences_groupecompetences_get_subresource' => [
+        'property' => 'groupecompetences',
+        'collection' => true,
+        'resource_class' => 'App\\Entity\\Groupecompetence',
+        'shortNames' => [
+            'Groupecompetence',
+            'Competence',
+        ],
+        'identifiers' => [
+            [
+                'id',
+                'App\\Entity\\Referentiel',
+                true,
+            ],
+            [
+                'competences',
+                'App\\Entity\\Competence',
+                true,
+            ],
+        ],
+        'operation_name' => 'competences_groupecompetences_get_subresource',
+        'route_name' => 'api_referentiels_competences_groupecompetences_get_subresource',
+        'path' => '/admin/referentiels/referentiels/{id}/competences/{competences}/groupecompetences.{_format}',
+        'defaults' => [],
+        'requirements' => [],
+        'options' => [],
+        'host' => '',
+        'schemes' => [],
+        'condition' => '',
+        'controller' => null,
+    ],
+]];

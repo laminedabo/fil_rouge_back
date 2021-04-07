@@ -1,0 +1,86 @@
+<?php //App_Entity_Competence
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Competence',
+                'id',
+                'libelle',
+                'groupecompetences',
+                'niveau',
+                'statistiquesCompetences',
+                'statut',
+                'referentiels',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'libelle' => $o[2],
+                    'groupecompetences' => $o[3],
+                    'niveau' => $o[4],
+                    'statistiquesCompetences' => $o[5],
+                    'statut' => $o[6],
+                    'referentiels' => $o[7],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'referentiel_read',
+                    'competence_read',
+                    'competence_detail_read',
+                    'Grpcompetence_details_read',
+                    'Grpcompetence_competence_read',
+                    'referentiel_groupecompetence_read',
+                    'promo_referentiel',
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+                [
+                    'Grpcompetence_details_read',
+                    'competence_detail_read',
+                    'competence_read',
+                    'Grpcompetence_competence_read',
+                    'promo_referentiel',
+                    'referentiel_groupecompetence_read',
+                    'referentiel_read',
+                    'brief_read',
+                    'brief_groupe_promo',
+                    'all_brief_read',
+                    'brief_promo',
+                    'brief_apprenant_promo',
+                    'promo_id_brief',
+                    'brief_brouillon',
+                    'brief_valide',
+                ],
+                [
+                    'competence_detail_read',
+                ],
+                [
+                    'referentiel_read',
+                    'competence_detail_read',
+                    'Grpcompetence_details_read',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

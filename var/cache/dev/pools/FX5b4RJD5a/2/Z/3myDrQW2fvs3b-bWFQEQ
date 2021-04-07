@@ -1,0 +1,162 @@
+<?php //%255BApp%255CEntity%255CUser%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone ($p['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        clone ($p['Doctrine\\ORM\\Mapping\\InheritanceType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\InheritanceType')),
+        clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorColumn')),
+        clone ($p['Doctrine\\ORM\\Mapping\\DiscriminatorMap'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\DiscriminatorMap')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['ApiPlatform\\Core\\Annotation\\ApiFilter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiFilter')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'repositoryClass' => [
+                'App\\Repository\\UserRepository',
+            ],
+            'fields' => [
+                1 => [
+                    'username',
+                    'email',
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                ],
+            ],
+            'value' => [
+                2 => 'JOINED',
+                4 => [
+                    'user' => 'User',
+                    'apprenant' => 'Apprenant',
+                    'formateur' => 'Formateur',
+                    'cm' => 'CM',
+                ],
+            ],
+            'name' => [
+                3 => 'type',
+            ],
+            'type' => [
+                3 => 'string',
+            ],
+            'collectionOperations' => [
+                5 => [
+                    'add_user' => [
+                        'method' => 'POST',
+                        'path' => '/users',
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas le privilege',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/users',
+                    ],
+                    'get_admins' => [
+                        'method' => 'GET',
+                        'path' => 's',
+                        'security' => '(is_granted(\'ROLE_ADMIN\'))',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'route_name' => 'admin_liste',
+                        'normalization_context' => [
+                            'groups' => [
+                                'admin_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                5 => [
+                    'update_user' => [
+                        'method' => 'PUT',
+                        'path' => '/users/{id}',
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'action non autorisée',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'normalization_context' => [
+                            'groups' => [
+                                'user_read',
+                                'user_details_read',
+                            ],
+                        ],
+                        'path' => '/users/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                    ],
+                    'get_admin' => [
+                        'method' => 'GET',
+                        'path' => 's/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                        'security' => '(is_granted(\'ROLE_FORMATEUR\'))',
+                        'security_message' => 'Vous n\'avez pas access à cette Ressource',
+                    ],
+                    'delete' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => '/users/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                    ],
+                    'patch' => [
+                        'security' => 'is_granted(\'ROLE_ADMIN\')',
+                        'security_message' => 'Vous n\'avez pas ces privileges.',
+                        'path' => '/users/{id}',
+                        'requirements' => [
+                            'id' => '\\d+',
+                        ],
+                    ],
+                ],
+            ],
+            'attributes' => [
+                5 => [
+                    'security' => 'is_granted(\'ROLE_ADMIN\')',
+                    'pagination_items_per_page' => 10,
+                    'normalization_context' => [
+                        'groups' => [
+                            'user_read',
+                            'user_details_read',
+                            'gprincipal_read',
+                        ],
+                    ],
+                    'route_prefix' => '/admin',
+                ],
+            ],
+            'filterClass' => [
+                6 => 'ApiPlatform\\Core\\Bridge\\Doctrine\\Orm\\Filter\\SearchFilter',
+            ],
+            'properties' => [
+                6 => [
+                    'id' => 'exact',
+                    'profil.libelle' => 'exact',
+                    'profil.id' => 'exact',
+                    'lastLogin' => 'exact',
+                    'statut' => 'exact',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[3],
+        $o[4],
+        $o[5],
+        $o[6],
+    ],
+    []
+); }];

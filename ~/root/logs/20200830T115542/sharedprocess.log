@@ -1,0 +1,4 @@
+[2020-08-30 11:55:45.559] [sharedprocess] [info] main {"machineId":"70e47962f8db9099b5c32bff5d086a841625d7fc5fd73ad6847e53798bf19d88","windowId":2}
+[2020-08-30 11:55:45.700] [sharedprocess] [info] Deleted from disk ms-ceintl.vscode-language-pack-fr /root/.vscode/extensions/ms-ceintl.vscode-language-pack-fr-1.48.3
+[2020-08-30 11:56:25.571] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-30 11:56:25.574] [sharedprocess] [info] Removing unused language pack: 0efca33a20bf5218eaa314fca17076eb.fr

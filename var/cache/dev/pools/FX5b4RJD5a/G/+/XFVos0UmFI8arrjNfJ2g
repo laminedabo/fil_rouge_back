@@ -1,0 +1,101 @@
+<?php //%255BApp%255CEntity%255CProfilsortie%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'collectionOperations' => [
+                [
+                    'post' => [
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/admin/profilsorties',
+                    ],
+                    'get' => [
+                        'security' => 'is_granted(\'ROLE_APPRENANT\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/admin/profilsorties',
+                        'normalization_context' => [
+                            'groups' => [
+                                'profilsortie_libelle_read',
+                            ],
+                        ],
+                    ],
+                    'profilsortie_promo' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/admin/promos/{id}/profilsorties',
+                        'normalization_context' => [
+                            'groups' => [
+                                'profilsortie_apprenants_read',
+                            ],
+                        ],
+                    ],
+                    'profilsortie_item' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/admin/promos/{idp}/profilsorties/{id}',
+                        'normalization_context' => [
+                            'groups' => [
+                                'profilsortie_apprenants_read',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'itemOperations' => [
+                [
+                    'profilsortie_id' => [
+                        'method' => 'GET',
+                        'security' => 'is_granted(\'ROLE_FORMATEUR\')',
+                        'security_message' => 'Vous n\'avez pas acces a cette ressource.',
+                        'path' => '/admin/profilsorties/{id}',
+                        'normalization_context' => [
+                            'groups' => [
+                                'profilsortie_apprenants_read',
+                            ],
+                        ],
+                    ],
+                    'patch' => [
+                        'security' => 'is_granted(\'EDIT\',object)',
+                        'security_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/admin/profilsorties/{id}',
+                    ],
+                    'put' => [
+                        'security_post_denormalize' => 'is_granted(\'EDIT\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/admin/profilsorties/{id}',
+                    ],
+                    'delete' => [
+                        'security_post_denormalize' => 'is_granted(\'DELETE\', object)',
+                        'security_post_denormalize_message' => 'Vous n\'avez pas ce privilege.',
+                        'path' => '/admin/profilsorties/{id}',
+                    ],
+                ],
+            ],
+            'attributes' => [
+                [
+                    'denormalization_context' => [
+                        'groups' => [
+                            'profilSortie_write',
+                        ],
+                    ],
+                ],
+            ],
+            'repositoryClass' => [
+                1 => 'App\\Repository\\ProfilsortieRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+); }];
