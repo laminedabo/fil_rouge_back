@@ -1,0 +1,3 @@
+<?php //route_name_1bab9c400cabb764b61602eeb26debca
+
+return [PHP_INT_MAX, 'api_tags_get_item'];

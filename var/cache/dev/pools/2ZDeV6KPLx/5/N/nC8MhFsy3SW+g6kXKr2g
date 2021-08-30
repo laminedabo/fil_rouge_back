@@ -1,0 +1,50 @@
+<?php //App_Entity_LivrableRendu
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+        clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\LivrableRendu',
+                'id',
+                'statut',
+                'delai',
+                'dateRendu',
+                'livrablePartiel',
+                'apprenant',
+                'commentaires',
+            ],
+            'attributesMetadata' => [
+                [
+                    'id' => $o[1],
+                    'statut' => $o[2],
+                    'delai' => $o[3],
+                    'dateRendu' => $o[4],
+                    'livrablePartiel' => $o[5],
+                    'apprenant' => $o[6],
+                    'commentaires' => $o[7],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'brief_promo',
+                ],
+                5 => [
+                    'brief_promo',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
